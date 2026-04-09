@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FutureDad – Polityka Prywatności / Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f0eb;
+    --surface: #fffdf9;
+    --text: #1a1410;
+    --text-soft: #6b5f53;
+    --accent: #2d5a3d;
+    --accent-light: #e8f0ea;
+    --border: #ddd5c8;
+    --shadow: rgba(45,90,61,0.08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.75; min-height: 100vh; }
+  header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 2rem 2rem 1.5rem; position: sticky; top: 0; z-index: 100; }
+  .header-inner { max-width: 780px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .logo-area h1 { font-family: 'DM Serif Display', serif; font-size: 1.5rem; letter-spacing: -0.02em; color: var(--accent); }
+  .logo-area p { font-size: 0.75rem; color: var(--text-soft); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 0.1rem; }
+  .lang-switch { display: flex; gap: 0.35rem; background: var(--accent-light); border-radius: 100px; padding: 0.25rem; }
+  .lang-btn { border: none; background: transparent; padding: 0.35rem 0.9rem; border-radius: 100px; font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 500; color: var(--text-soft); cursor: pointer; transition: all 0.2s ease; letter-spacing: 0.04em; }
+  .lang-btn.active { background: var(--accent); color: #fff; box-shadow: 0 2px 8px var(--shadow); }
+  main { max-width: 780px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+  .meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+  .meta-date { font-size: 0.78rem; color: var(--text-soft); letter-spacing: 0.05em; text-transform: uppercase; }
+  .meta-badge { font-size: 0.72rem; background: var(--accent-light); color: var(--accent); padding: 0.25rem 0.65rem; border-radius: 100px; font-weight: 500; letter-spacing: 0.04em; }
+  .section { margin-bottom: 2.75rem; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 2rem 2.25rem; transition: box-shadow 0.2s ease; }
+  .section:hover { box-shadow: 0 4px 24px var(--shadow); }
+  .section-num { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+  .section h2 { font-family: 'DM Serif Display', serif; font-size: 1.3rem; margin-bottom: 1.25rem; color: var(--text); letter-spacing: -0.01em; }
+  p { margin-bottom: 0.9rem; color: var(--text-soft); font-size: 0.95rem; }
+  p:last-child { margin-bottom: 0; }
+  strong { color: var(--text); font-weight: 500; }
+  .highlight-box { background: var(--accent-light); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1rem 0; font-size: 0.92rem; color: var(--text); }
+  ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin: 0.5rem 0; }
+  ul li { padding-left: 1.4rem; position: relative; font-size: 0.93rem; color: var(--text-soft); }
+  ul li::before { content: "—"; position: absolute; left: 0; color: var(--accent); font-weight: 500; }
+  .contact-link { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+  .contact-link:hover { border-color: var(--accent); }
+  address { font-style: normal; }
+  footer { text-align: center; padding: 2rem; font-size: 0.78rem; color: var(--text-soft); border-top: 1px solid var(--border); background: var(--surface); }
+  [data-lang] { display: none; }
+  [data-lang].visible { display: block; }
+  @media (max-width: 600px) {
+    header { padding: 1.25rem 1.25rem 1rem; }
+    main { padding: 2rem 1.25rem 4rem; }
+    .section { padding: 1.5rem 1.25rem; }
+    .logo-area h1 { font-size: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-area">
+      <h1>FutureDad</h1>
+      <p id="header-subtitle"></p>
+    </div>
+    <div class="lang-switch">
+      <button class="lang-btn" id="btn-pl" onclick="setLang('pl')">PL</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="meta">
+    <span class="meta-date" id="meta-date"></span>
+    <span class="meta-badge">RODO / GDPR</span>
+  </div>
+
+  <!-- POLISH -->
+  <div data-lang="pl">
+    <div class="section">
+      <div class="section-num">§ 1</div>
+      <h2>Postanowienia ogólne</h2>
+      <p>Niniejsza Polityka Prywatności opisuje, w jaki sposób <strong>Bartłomiej Gil Studio</strong> („Administrator", „my") przetwarza dane osobowe w związku z korzystaniem z aplikacji mobilnej FutureDad („Aplikacja").</p>
+      <p>Aplikacja nie wymaga zakładania konta ani podawania danych bezpośrednio identyfikujących użytkownika, takich jak imię, nazwisko czy adres e-mail.</p>
+      <div class="highlight-box"><strong>Większość danych aplikacji</strong> (takich jak nawyki, przypomnienia, wyniki i serie) jest przechowywana wyłącznie lokalnie na Twoim urządzeniu i nie jest przesyłana na nasze serwery. Zbieramy wyłącznie pseudonimowe dane techniczne i analityczne.</div>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 2</div>
+      <h2>Administrator danych</h2>
+      <address>
+        <p><strong>Bartłomiej Gil Studio</strong></p>
+        <p>ul. Czarnieckiego 3/6, 61-538 Poznań</p>
+        <p>NIP: 7831875673</p>
+        <p>Kontakt: <a class="contact-link" href="mailto:bartlomiejgilstudio@gmail.com">bartlomiejgilstudio@gmail.com</a></p>
+      </address>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 3</div>
+      <h2>Rodzaje zbieranych danych i charakterystyka analityki</h2>
+      <p>Zbieramy wyłącznie następujące <strong>pseudonimowe dane</strong>:</p>
+      <ul>
+        <li><strong>PostHog (Cloud EU):</strong> Automatycznie generowany <code>distinct_id</code> służący do analizy użycia aplikacji.</li>
+        <li><strong>RevenueCat:</strong> Automatycznie generowany <code>App User ID</code> do zarządzania subskrypcjami i zakupami.</li>
+        <li><strong>Dane techniczne:</strong> Model urządzenia, wersja systemu operacyjnego, wersja aplikacji oraz przybliżona lokalizacja (na podstawie adresu IP).</li>
+        <li><strong>Interakcje (Zdarzenia):</strong> Logujemy zdarzenia takie jak otwarcie ekranów, kliknięcia w menu czy ukończenie onbordingu.</li>
+      </ul>
+      <div class="highlight-box">W przypadku korzystania z funkcji tworzenia własnych nawyków, analityka PostHog odnotowuje jedynie fakt utworzenia lub edycji nawyku. <strong>Treść (nazwa) Twoich własnych nawyków nigdy nie jest przesyłana do analityki</strong> i pozostaje wyłącznie na Twoim urządzeniu.</div>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 4</div>
+      <h2>Dane szczególnej kategorii (zdrowie)</h2>
+      <p>Mimo że Aplikacja wspiera proces planowania ojcostwa, <strong>Administrator nie gromadzi ani nie przetwarza danych dotyczących zdrowia</strong> w rozumieniu Art. 9 RODO na swoich serwerach.</p>
+      <p>Wszystkie informacje dotyczące konkretnych nawyków zdrowotnych, suplementacji czy postępów w realizacji planu są przechowywane wyłącznie w pamięci Twojego urządzenia. Dane przesyłane do dostawców analitycznych mają charakter czysto techniczny i behawioralny.</p>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 5</div>
+      <h2>Przechowywanie danych i Backup</h2>
+      <ul>
+        <li><strong>Dane lokalne:</strong> Dane o Twoich nawykach i przypomnieniach znajdują się wyłącznie na urządzeniu.</li>
+        <li><strong>Backupy systemowe:</strong> Jeśli korzystasz z systemowych kopii zapasowych (np. iCloud Backup lub Google Cloud Backup), dane lokalne Aplikacji mogą być częścią takiej kopii i trafiać na serwery dostawcy Twojego systemu operacyjnego. Administrator nie ma dostępu do tych danych.</li>
+        <li><strong>Okres przechowywania:</strong> Dane analityczne i techniczne są przechowywane tak długo, jak jest to niezbędne (zazwyczaj do 24 miesięcy dla analityki lub przez okres trwania aktywnej subskrypcji w RevenueCat).</li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 6</div>
+      <h2>Odbiorcy danych i transfery poza EOG</h2>
+      <ul>
+        <li><strong>PostHog:</strong> Dane są przechowywane wyłącznie na serwerach w Unii Europejskiej (Frankfurt, Niemcy).</li>
+        <li><strong>RevenueCat:</strong> Dane związane z subskrypcjami mogą być przekazywane do USA. Stosujemy Standardowe Klauzule Umowne (SCC) oraz mechanizmy Data Privacy Framework.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 7</div>
+      <h2>Prawa użytkowników</h2>
+      <p>Przysługuje Ci prawo do dostępu do danych, ich usunięcia („prawo do bycia zapomnianym"), ograniczenia przetwarzania oraz sprzeciwu.</p>
+      <p>Ponieważ nie zbieramy Twojego adresu e-mail, realizacja tych praw wymaga podania identyfikatorów technicznych:</p>
+      <ul>
+        <li><strong>PostHog distinct_id</strong></li>
+        <li><strong>RevenueCat App User ID</strong></li>
+      </ul>
+      <p>(Znajdziesz je w ustawieniach Aplikacji: <strong>Więcej → Prywatność</strong>)</p>
+      <p>Zgłoszenia prosimy kierować na: <a class="contact-link" href="mailto:bartlomiejgilstudio@gmail.com">bartlomiejgilstudio@gmail.com</a></p>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 8</div>
+      <h2>Organ nadzorczy</h2>
+      <p>Masz prawo wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych (UODO):</p>
+      <address>
+        <p>ul. Stawki 2, 00-193 Warszawa</p>
+        <p><a class="contact-link" href="https://uodo.gov.pl" target="_blank" rel="noopener">uodo.gov.pl</a></p>
+      </address>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 9</div>
+      <h2>Dane dzieci i wiek użytkowników</h2>
+      <p>Aplikacja jest przeznaczona wyłącznie dla osób, które ukończyły <strong>18. rok życia</strong>. Nie zbieramy świadomie danych osób niepełnoletnich.</p>
+      <p>Jeśli jesteś rodzicem i uważasz, że Twoje dziecko korzysta z aplikacji, skontaktuj się z nami: <a class="contact-link" href="mailto:bartlomiejgilstudio@gmail.com">bartlomiejgilstudio@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div data-lang="en">
+    <div class="section">
+      <div class="section-num">§ 1</div>
+      <h2>General Provisions</h2>
+      <p>This Privacy Policy describes how <strong>Bartłomiej Gil Studio</strong> ("Controller", "we") processes personal data in connection with the use of the FutureDad mobile application ("App").</p>
+      <p>The App does not require creating an account or providing directly identifying information such as your name or email address.</p>
+      <div class="highlight-box"><strong>Most app data</strong> (such as habits, reminders, results, and streaks) is stored exclusively on your device and is never transmitted to our servers. We collect only pseudonymous technical and analytics data.</div>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 2</div>
+      <h2>Data Controller</h2>
+      <address>
+        <p><strong>Bartłomiej Gil Studio</strong></p>
+        <p>ul. Czarnieckiego 3/6, 61-538 Poznań, Poland</p>
+        <p>Tax ID (NIP): 7831875673</p>
+        <p>Contact: <a class="contact-link" href="mailto:bartlomiejgilstudio@gmail.com">bartlomiejgilstudio@gmail.com</a></p>
+      </address>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 3</div>
+      <h2>Types of Data Collected and Analytics</h2>
+      <p>We collect only the following <strong>pseudonymous data</strong>:</p>
+      <ul>
+        <li><strong>PostHog (Cloud EU):</strong> An automatically generated <code>distinct_id</code> used for app usage analysis.</li>
+        <li><strong>RevenueCat:</strong> An automatically generated <code>App User ID</code> for managing subscriptions and purchases.</li>
+        <li><strong>Technical data:</strong> Device model, OS version, app version, and approximate location (based on IP address).</li>
+        <li><strong>Interactions (Events):</strong> We log events such as screen opens, menu clicks, and onboarding completion.</li>
+      </ul>
+      <div class="highlight-box">When using the custom habits feature, PostHog analytics only records that a habit was created or edited. <strong>The content (name) of your custom habits is never sent to analytics</strong> and remains exclusively on your device.</div>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 4</div>
+      <h2>Special Category Data (Health)</h2>
+      <p>Although the App supports fatherhood planning, <strong>the Controller does not collect or process health data</strong> within the meaning of Art. 9 GDPR on its servers.</p>
+      <p>All information regarding specific health habits, supplementation, or plan progress is stored exclusively in your device's memory. Data transmitted to analytics providers is purely technical and behavioral in nature.</p>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 5</div>
+      <h2>Data Storage and Backup</h2>
+      <ul>
+        <li><strong>Local data:</strong> Your habit and reminder data resides solely on your device.</li>
+        <li><strong>System backups:</strong> If you use system backups (e.g. iCloud Backup or Google Cloud Backup), local App data may be included in such a backup and sent to your OS provider's servers. The Controller has no access to this data.</li>
+        <li><strong>Retention period:</strong> Analytics and technical data are retained for as long as necessary (typically up to 24 months for analytics, or for the duration of an active RevenueCat subscription).</li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 6</div>
+      <h2>Data Recipients and Transfers Outside the EEA</h2>
+      <ul>
+        <li><strong>PostHog:</strong> Data is stored exclusively on servers within the European Union (Frankfurt, Germany).</li>
+        <li><strong>RevenueCat:</strong> Subscription-related data may be transferred to the USA. We use Standard Contractual Clauses (SCCs) and Data Privacy Framework mechanisms to ensure data security.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 7</div>
+      <h2>User Rights</h2>
+      <p>You have the right to access your data, request its deletion ("right to be forgotten"), restrict processing, and object to processing.</p>
+      <p>As we do not collect your email address, exercising these rights requires providing technical identifiers:</p>
+      <ul>
+        <li><strong>PostHog distinct_id</strong></li>
+        <li><strong>RevenueCat App User ID</strong></li>
+      </ul>
+      <p>(Find them in the App settings: <strong>More → Privacy</strong>)</p>
+      <p>Please submit requests to: <a class="contact-link" href="mailto:bartlomiejgilstudio@gmail.com">bartlomiejgilstudio@gmail.com</a></p>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 8</div>
+      <h2>Supervisory Authority</h2>
+      <p>You have the right to lodge a complaint with the President of the Personal Data Protection Office (UODO):</p>
+      <address>
+        <p>ul. Stawki 2, 00-193 Warsaw, Poland</p>
+        <p><a class="contact-link" href="https://uodo.gov.pl" target="_blank" rel="noopener">uodo.gov.pl</a></p>
+      </address>
+    </div>
+    <div class="section">
+      <div class="section-num">§ 9</div>
+      <h2>Children's Data and User Age</h2>
+      <p>The App is intended exclusively for persons who are <strong>18 years of age or older</strong>. We do not knowingly collect data from minors.</p>
+      <p>If you are a parent and believe your child is using the App, please contact us: <a class="contact-link" href="mailto:bartlomiejgilstudio@gmail.com">bartlomiejgilstudio@gmail.com</a></p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <span id="footer-text"></span>
+</footer>
+
+<script>
+  const LANGS = {
+    pl: {
+      subtitle: 'Polityka Prywatnosci',
+      date: 'Ostatnia aktualizacja: 9 kwietnia 2026',
+      footer: '2026 Bartlomiej Gil Studio - FutureDad'
+    },
+    en: {
+      subtitle: 'Privacy Policy',
+      date: 'Last updated: April 9, 2026',
+      footer: '2026 Bartlomiej Gil Studio - FutureDad'
+    }
+  };
+
+  function setLang(lang) {
+    if (!LANGS[lang]) lang = 'pl';
+
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.classList.toggle('visible', el.dataset.lang === lang);
+    });
+
+    document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+    document.getElementById('header-subtitle').textContent = LANGS[lang].subtitle;
+    document.getElementById('meta-date').textContent = LANGS[lang].date;
+    document.getElementById('footer-text').textContent = LANGS[lang].footer;
+    document.documentElement.lang = lang;
+
+    const url = new URL(window.location);
+    url.searchParams.set('lang', lang);
+    window.history.replaceState({}, '', url);
+  }
+
+  // On load: read ?lang= from URL, fallback to 'pl'
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  setLang(['pl', 'en'].includes(urlLang) ? urlLang : 'pl');
+</script>
+
+</body>
+</html>
