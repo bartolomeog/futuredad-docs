@@ -279,7 +279,6 @@
       <span class="meta-badge">RODO / GDPR</span>
     </div>
 
-    <!-- POLISH -->
     <div data-lang="pl">
       <div class="section">
         <div class="section-num">§ 1</div>
@@ -328,7 +327,7 @@
         <p>Mimo że Aplikacja wspiera proces planowania ojcostwa, <strong>Administrator nie gromadzi ani nie przetwarza
             danych dotyczących zdrowia</strong> w rozumieniu Art. 9 RODO na swoich serwerach.</p>
         <p>Wszystkie informacje dotyczące konkretnych nawyków zdrowotnych, suplementacji czy postępów w realizacji planu
-          są przechowywane wyłącznie w pamięci Twojego urządzenia. Dane przesyłane do dostawców analitycznych mają
+          sre przechowywane wyłącznie w pamięci Twojego urządzenia. Dane przesyłane do dostawców analitycznych mają
           charakter czysto techniczny i behawioralny.</p>
       </div>
       <div class="section">
@@ -340,9 +339,10 @@
           <li><strong>Backupy systemowe:</strong> Jeśli korzystasz z systemowych kopii zapasowych (np. iCloud Backup lub
             Google Cloud Backup), dane lokalne Aplikacji mogą być częścią takiej kopii i trafiać na serwery dostawcy
             Twojego systemu operacyjnego. Administrator nie ma dostępu do tych danych.</li>
-          <li><strong>Okres przechowywania:</strong> Dane analityczne i techniczne są przechowywane tak długo, jak jest
-            to niezbędne (zazwyczaj do 24 miesięcy dla analityki lub przez okres trwania aktywnej subskrypcji w
-            RevenueCat).</li>
+          <li><strong>Okres przechowywania:</strong> Dane analityczne i techniczne są przechowywane przez okres
+            niezbędny do analizy rozwoju Aplikacji, nie dłużej niż przez czas określony w polityce retencji dostawcy
+            usługi (PostHog), wynoszący obecnie do 7 lat. Dane te podlegają automatycznemu usuwaniu po upływie tego
+            okresu.</li>
         </ul>
       </div>
       <div class="section">
@@ -350,11 +350,12 @@
         <h2>Odbiorcy danych i transfery poza EOG</h2>
         <ul>
           <li><strong>PostHog:</strong> Dane są przechowywane wyłącznie na serwerach w Unii Europejskiej (Frankfurt,
-            Niemcy). Więcej informacji: <a class="contact-link" href="https://posthog.com/privacy"
-              target="_blank">Polityka Prywatności PostHog</a>.</li>
+            Niemcy). Więcej informacji: <a class="contact-link" href="https://posthog.com/privacy" target="_blank"
+              rel="noopener">Polityka Prywatności PostHog</a>.</li>
           <li><strong>RevenueCat:</strong> Dane związane z subskrypcjami mogą być przekazywane do USA. Stosujemy
             Standardowe Klauzule Umowne (SCC). Więcej informacji: <a class="contact-link"
-              href="https://www.revenuecat.com/privacy" target="_blank">Polityka Prywatności RevenueCat</a>.</li>
+              href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Polityka Prywatności
+              RevenueCat</a>.</li>
         </ul>
       </div>
       <div class="section">
@@ -362,8 +363,13 @@
         <h2>Prawa użytkowników</h2>
         <p>Przysługuje Ci prawo do dostępu do danych, ich usunięcia („prawo do bycia zapomnianym"), ograniczenia
           przetwarzania oraz sprzeciwu.</p>
-        <p>Ponieważ nie zbieramy Twojego adresu e-mail, realizacja tych praw wymaga podania identyfikatorów
-          technicznych:</p>
+        <p>W trosce o maksymalną prywatność, <strong>Aplikacja nie tworzy profili osób w systemach
+            analitycznych</strong> (nie stosujemy funkcji identyfikacji użytkowników). Dane są gromadzone jako
+          rozproszone logi techniczne powiązane z losowym identyfikatorem.</p>
+        <p>Z uwagi na brak powiązania tych danych z konkretną tożsamością w systemie dostawcy, ich ręczne usunięcie na
+          żądanie może być technicznie ograniczone, jednak wszystkie takie dane podlegają automatycznemu usuwaniu po
+          upływie okresu retencji wskazanego w § 5.</p>
+        <p>Jeśli chcesz złożyć zapytanie dotyczące Twoich danych, podaj identyfikatory techniczne:</p>
         <ul>
           <li><strong>PostHog distinct_id</strong></li>
           <li><strong>RevenueCat App User ID</strong></li>
@@ -391,7 +397,6 @@
       </div>
     </div>
 
-    <!-- ENGLISH -->
     <div data-lang="en">
       <div class="section">
         <div class="section-num">§ 1</div>
@@ -450,8 +455,7 @@
           <li><strong>System backups:</strong> If you use system backups (e.g. iCloud Backup or Google Cloud Backup),
             local App data may be included in such a backup and sent to your OS provider's servers. The Controller has
             no access to this data.</li>
-          <li><strong>Retention period:</strong> Analytics and technical data are retained for as long as necessary
-            (typically up to 24 months for analytics, or for the duration of an active RevenueCat subscription).</li>
+          <li><strong>Retention period:</strong> Analytics and technical data are retained for the period necessary to analyze the App's development, no longer than the period specified in the service provider's (PostHog) retention policy, which is currently up to 7 years. This data is subject to automatic deletion after this period.</li>
         </ul>
       </div>
       <div class="section">
@@ -459,11 +463,12 @@
         <h2>Data Recipients and Transfers Outside the EEA</h2>
         <ul>
           <li><strong>PostHog:</strong> Data is stored exclusively on servers within the European Union (Frankfurt,
-            Germany). More information: <a class="contact-link" href="https://posthog.com/privacy"
-              target="_blank">PostHog Privacy Policy</a>.</li>
+            Germany). More information: <a class="contact-link" href="https://posthog.com/privacy" target="_blank"
+              rel="noopener">PostHog Privacy Policy</a>.</li>
           <li><strong>RevenueCat:</strong> Subscription-related data may be transferred to the USA. We use Standard
             Contractual Clauses (SCCs). More information: <a class="contact-link"
-              href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a>.</li>
+              href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.
+          </li>
         </ul>
       </div>
       <div class="section">
@@ -471,8 +476,13 @@
         <h2>User Rights</h2>
         <p>You have the right to access your data, request its deletion ("right to be forgotten"), restrict processing,
           and object to processing.</p>
-        <p>As we do not collect your email address, exercising these rights requires providing technical identifiers:
-        </p>
+        <p>For maximum privacy, <strong>the App does not create person profiles in analytics systems</strong> (we do not
+          use identification functions). Data is collected as dispersed technical logs associated with a random
+          identifier.</p>
+        <p>As this data is not linked to a specific identity in the provider's system, manual deletion upon request may
+          be technically limited. However, all such data is subject to automatic deletion after the retention period
+          specified in § 5.</p>
+        <p>If you wish to make an inquiry regarding your data, please provide the technical identifiers:</p>
         <ul>
           <li><strong>PostHog distinct_id</strong></li>
           <li><strong>RevenueCat App User ID</strong></li>
@@ -509,14 +519,14 @@
   <script>
     const LANGS = {
       pl: {
-        subtitle: 'Polityka Prywatnosci',
+        subtitle: 'Polityka Prywatności',
         date: 'Ostatnia aktualizacja: 9 kwietnia 2026',
-        footer: '2026 Bartlomiej Gil Studio - FutureDad'
+        footer: '2026 Bartłomiej Gil Studio - FutureDad'
       },
       en: {
         subtitle: 'Privacy Policy',
         date: 'Last updated: April 9, 2026',
-        footer: '2026 Bartlomiej Gil Studio - FutureDad'
+        footer: '2026 Bartłomiej Gil Studio - FutureDad'
       }
     };
 
@@ -540,7 +550,6 @@
       window.history.replaceState({}, '', url);
     }
 
-    // On load: read ?lang= from URL, fallback to 'pl'
     const urlLang = new URLSearchParams(window.location.search).get('lang');
     setLang(['pl', 'en'].includes(urlLang) ? urlLang : 'pl');
   </script>
